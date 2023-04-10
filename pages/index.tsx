@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import GradientButton from "./gradient-button";
 
 export default function Home(): JSX.Element {
   return (
@@ -40,10 +39,12 @@ export default function Home(): JSX.Element {
                   </h3>
                 </div>
                 <div className="animate__animated animate__pulse">
-                  <GradientButton
-                    link="https://account-abstraction-zeta.vercel.app/"
-                    title="Connect Smart Wallet"
-                  />
+                  <a
+                    href="https://account-abstraction-zeta.vercel.app/"
+                    className="px-10 py-3 border-0 border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-[#a13bf7] via-[#008dff] to-[#00bdff] hover:drop-shadow-[0_3px_5px_#7d7d7d] md:py-4 md:text-lg"
+                  >
+                    Connect Smart Wallet
+                  </a>
                 </div>
               </div>
             </div>
